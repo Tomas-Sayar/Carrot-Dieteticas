@@ -1,0 +1,2 @@
+# Carrot-Dieteticas
+Development of an e-commerce using HTML for the structure, CSS for the design and JAVASCRIPT for interactions and/or validations on the client side. The site is responsive. Both the REST API and the Backend were developed in NODE.JS using MVC. We design and use a UML diagram to build the relational database with which we then interact through MySQL. The project was developed following the guidelines of Agile Methodologies (Scrum).
