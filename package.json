@@ -1,0 +1,36 @@
+{
+	"name": "dietetica-carrot",
+	"version": "1.0.0",
+	"description": "proyecto integrador grupo 1. E-Commerce",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador/issues"
+	},
+	"homepage": "https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador#readme",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cl-cli": "^0.0.6",
+		"cli": "^1.0.1",
+		"cors": "^2.8.5",
+		"ejs": "^3.1.7",
+		"express": "^4.17.3",
+		"express-session": "^1.17.3",
+		"express-validator": "^6.14.2",
+		"method-override": "^3.0.0",
+		"multer": "^1.4.4",
+		"mysql2": "^2.3.3",
+		"nodemon": "^2.0.16",
+		"react-router-dom": "^5.3.0",
+		"sequelize": "^6.21.3"
+	}
+}

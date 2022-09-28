@@ -1,0 +1,1044 @@
+* {
+	font-family: cursive, sans-serif;
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*!------------------------------ home ------------------------------*/
+/** header */
+/** inicio*/
+.menu-usuario {
+	display: flex;
+	max-width: 100%;
+	margin: 1% 1%;
+}
+
+.menu {
+	width: 50%;
+	margin: 6% 0% 6% 2%;
+}
+
+.logOut {
+	width: 12%;
+}
+
+.menu-login {
+	color: orange;
+	width: 3%;
+	display: flex;
+	justify-content: end;
+	margin: 0%;
+}
+
+.menu-login img{
+	border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.fa-user-circle {
+	font-size: 200%;
+	color:orange;
+	justify-content: flex-end;
+}
+
+.fa-user-circle:hover {
+	transform: scale(1.5);
+}
+
+.menu .fa-bars {
+	color: orange;
+	margin-right: 5px;
+	margin-top: 0.5%;
+	font-size: 150%;
+}
+
+.navbar-form {
+	display: flex;
+}
+
+.search {
+	height: 30px;
+    border-radius: 7px;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+form.navbar-form.navbar-left{
+display: flex;
+align-items: center;
+text-align: center;
+
+}
+
+form.navbar-form.navbar-left :is(button){
+	color: inherit;
+	border: none;
+	background: transparent;
+	outline: none;
+	color: orange;
+}
+form.navbar-form.navbar-left :is(input){
+	color: white;
+	border: #faedca 4px solid;
+	background: transparent;
+	outline: none;
+	background-color: orange;
+}
+.search-bar-input{
+	width: 0px;
+	transition: width .5s;
+	display: none;
+}
+
+.search-bar-bu{
+width: 25px;
+height: 25px;
+display: grid;
+place-items: center;
+cursor: pointer;
+}
+
+form.navbar-form.navbar-left:focus-within input{
+	width:200px;
+}
+::placeholder{
+	color: inherit;
+}
+.search:hover>input {
+	width: 200px;
+	padding: 0px 10px;
+}
+
+i.fas.fa-search {
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	padding: 2%;
+}
+
+i.fas.fa-search:hover {
+	color: orange;
+}
+
+
+input.search-bar-input :active {
+	border-radius: 8px;
+	border-color: orange;
+	width: 100%;
+	height: 70%;
+	padding: 20%;
+
+}
+
+input.search-bar-input {
+	border-radius: 8px;
+	border-color: orange;
+
+}
+
+.search-bar-bu {
+	color: white;
+	padding: revert;
+	background-color: orange;
+}
+
+.search-bar-bu:focus {
+	font-size: 1.3rem;
+	border-radius: 1rem;
+	margin: 1%;
+}
+
+
+
+/** menu principal*/
+
+body {
+	background-color: #faedca;
+}
+
+.menu-principal {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 2%;
+	background-color: orange;
+	padding: 1%;
+	color: white;
+	width: 100%;
+}
+
+.menu-principal :hover {
+	transform: scale(1.3);
+}
+
+.menu-principal .inicio {
+	font-size: 0.3em;
+}
+
+.menu-principal .inicio span {
+	text-decoration: none;
+}
+
+.fa-home {
+	font-size: 1.7rem;
+	color: floralwhite;
+}
+
+.fa-clipboard-list {
+	font-size: 1.7rem;
+	color: floralwhite;
+}
+
+.fa-shopping-cart {
+	font-size: 1.7rem;
+	color: floralwhite;
+}
+
+span {
+	font-size: initial;
+	font-size: 20px;
+}
+
+/** logo, titulo y eslogan*/
+
+.encabezado {
+	width: 100%;
+}
+
+a.logo-carrot {
+	border-radius: 100%;
+	width: 40%;
+	float: left;
+	
+
+}
+
+.carrot {
+	padding-top: 10%;
+	padding-right: 20%;
+    font-size: 125%;
+	
+}
+
+.carrot .titulo {
+	font-size: 320%;
+	font-family: fantasy;
+	color: orange;
+}
+
+.carrot .eslogan {
+	color: lightgreen;
+	font-size: 150%;
+}
+
+/**main*/
+main {
+	color: white;
+}
+
+.carrusel1 img {
+	width: 100%;
+	display: block;
+}
+
+.carrusel2 img {
+	display: none;
+}
+
+
+h1.titulo {
+	background-color: orange;
+}
+
+.circulos {
+	display: flex;
+	border-bottom: orange solid 1.5px;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 90%;
+	padding-bottom: 8%;
+	margin-left: 5%;
+}
+
+.circulos .circulo {
+	border-radius: 100%;
+	border: orange 1px solid;
+	width: 1%;
+	height: 1%;
+	margin: 1.5%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+}
+
+.circulos .circulo-relleno {
+	border-radius: 100%;
+	border: orange 1px solid;
+	background-color: orange;
+	width: 1%;
+	height: 1%;
+	margin: 1.5%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+}
+
+.destacado .titulo {
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 4%;
+	margin-bottom: 3%;
+	font-family: 'Caveat', cursive;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 5%;
+}
+
+p.descripcion {
+	display: none;
+}
+
+article {
+	width: 60%;
+	border: orange solid 4px;
+	background-color: white;
+	margin-bottom: 6%;
+	border-radius: 10%;
+	color: black;
+
+}
+
+article img {
+	width: 100%;
+	background-color: white;
+	border-radius: 20%;
+}
+
+article .info {
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-bottom: 3%;
+	margin-top: 5%;
+}
+
+article .info h1 {
+	font-size: 1.3rem;
+	margin-bottom: 2%;
+	border-top: orange solid 3px;
+	color: orange;
+	padding-top: 5%;
+}
+
+article .info .precio {
+	font-size: 1.6rem;
+	color: orange;
+	text-align: right;
+	margin-top: 4%;
+}
+
+.ver-mas-productos {
+	margin-top: 5%;
+	font-size: 2rem;
+	color: white;
+	background-color: orange;
+	border: lightgray solid 1px;
+	padding: 2%;
+	transform: rotate;
+}
+
+/**footer*/
+
+footer {
+	border-top: orange 2px solid;
+	/*background-color: orange;*/
+	margin-top: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-align: center;
+	color: black;
+	background-image: url('../img/fondozana2.jpg');
+	background-size: 40%;
+}
+
+
+
+footer span:hover {
+	color: white;
+	background-color: orange;
+	cursor: pointer;
+}
+
+h6 {
+	margin-top: 3%;
+	font-size: 220%;
+}
+
+.redes-sociales {
+	font-size: 191%;
+	display: block;
+}
+
+.mas-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.fa-instagram {
+	font-size: 100%;
+	padding: 2%;
+}
+
+.fa-twitter {
+	font-size: 100%;
+	padding: 2%;
+}
+
+.fa-facebook {
+	font-size: 100%;
+	padding: 2%;
+}
+.feedback{
+	color: red;
+}
+/*!-----------------------Detalles del Producto----------------------*/
+
+/***/
+.detalles h2 {
+    font-size: -3.4rem;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    font-size: 2.2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+	background-color: orange;
+	margin-bottom: 2%;
+	}
+
+.product-details {
+	text-align: center;
+}
+
+.product-details img {
+	width: 60%;
+	border: orange solid 10px;
+	margin-bottom: 8%;
+	margin: 5%;
+	border-radius: 218%;
+	transition: all 5s;
+	background-color: gray;
+}
+
+.product-details img:hover {
+	transform: rotate(-360deg);
+}
+
+.descrip {
+	font-size: 1.9rem;
+	margin-bottom: 5%;
+	color: grey;;
+	display: flex;
+	margin-left: 2%;
+}
+
+.descrip::first-letter {
+	color: orange;
+	font-size: 1.5rem;
+}
+
+.product-details .info-product-details .precio {
+	font-size: 1.8rem;
+	text-align: center;
+	width: 100%;
+	color: orange;
+}
+.delete{
+	text-align: center;
+}
+
+.boton-compartir {
+	font-size: 1.5rem;
+	margin-top: 10%;
+	color: black;
+	text-align: center;
+}
+.compartir {
+    width: 100%;
+    text-align: center;
+}
+
+.compartir .fa-instagram {
+	font-size: 2.5em;
+	color: orange;
+}
+
+.compartir .fa-twitter {
+	font-size: 2.5em;
+	color: orange;
+}
+
+.compartir .fa-facebook {
+	font-size: 2.5em;
+	color: orange;
+}
+
+/*? Articulos relacionados */
+
+.titulo-art-relacionado {
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 4%;
+	margin-bottom: 5%;
+	color: black;
+}
+
+.productos-relacionados {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.articulo-relacionado {
+	width: 25%;
+	border: orange solid 3px;
+	background-color: orange;
+	margin-bottom: 6%;
+	margin-right: 2%;
+	margin-left: 2%;
+	border-radius: 10%;
+}
+
+.articulo-relacionado:hover {
+	transform: scale(1.3);
+}
+
+.articulo-relacionado img {
+	width: 100%;
+	border-bottom: lightgray solid 1px;
+	background-color: white;
+	border-radius: 12%;
+}
+
+.articulo-relacionado .info {
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-bottom: 3%;
+	margin-top: 5%;
+}
+
+.articulo-relacionado .info h1 {
+	font-size: 1rem;
+	margin-bottom: 2%;
+}
+
+.articulo-relacionado .info .precio {
+	font-size: 1.5rem;
+	color: blanchedalmond;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.articulo-relacionado .info .agregar {
+	font-size: 1rem;
+	color: white;
+	background-color: orange;
+	border: white 3px solid;
+	text-align: center;
+	margin-top: 5%;
+	padding: 5%;
+	border-radius: 5%;
+}
+
+/** Pagina de registro*/
+
+h1.Crear-Cuenta {
+	background-color: orange;
+	font-size: 2.2rem;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	margin-bottom: revert;
+	justify-content: center;
+	padding: 1%;
+}
+
+label {
+	width: 100%;
+	font-size: 158%;
+	margin-bottom: 5%;
+}
+
+.botones {
+	display: flex;
+	justify-content: center;
+}
+
+.minorista {
+	width: 2%;
+}
+
+.mayorista {
+	width: 2%;
+}
+
+#usersImage {
+	color: black;
+	font-family: sans-serif bold;
+	font-weight: 2px;
+	font-size: 140%;
+}
+
+/* login*/
+h1.login {
+
+	background-color: rgb(255, 165, 0);
+	font-size: 2.2rem;
+	box-sizing: border-box;
+	padding: 1%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: revert;
+}
+
+.videoLogin {
+	width: 50%;
+	justify-content: left;
+}
+
+label {
+	width: 100%;
+	font-size: solid 158%;
+	margin-bottom: 5%;
+	color: black;
+	margin-left: 5%;
+}
+
+input {
+	width: 90%;
+	/*color: black;*/
+	padding: 1%;
+	margin: solid black 1%;
+	justify-content: center;
+	margin: 1% 4%;
+
+}
+
+input:invalid {
+	border-color: red;
+	background-color: orange;
+}
+
+.errores {
+	color: red;
+	margin-left: 5%;
+}
+
+div.button {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	background-color: orange;
+	color: white;
+	border: gray;
+	font-size: 180%;
+	justify-content: space-around;
+	padding: 2%;
+	border-radius: 1rem;
+	box-sizing: border-box;
+	margin-top: 3%;
+	cursor: pointer;
+}
+.button button{
+	padding: 1%;
+	display: flex;
+	font-size: 1.5rem;
+
+}
+
+a {
+	color: rgb(130, 121, 121);
+	display: flex;
+	justify-content: center;
+}
+
+p.sinUsuario {
+	color: rgb(130, 121, 121);
+	display: flex;
+	justify-content: center;
+	margin-top: 1%;
+}
+
+.aSinUsuario {
+	margin-left: 1%;
+	font-size: 16px;
+	color: black;
+}
+
+.error-feedback {
+	color: red !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+/*carrito*/
+h2.carrito {
+	color: white;
+	font-size: 2.2rem;
+	width: 100%;
+	height: auto;
+	background-color: orange;
+	margin-left: 0%;
+	padding: 1%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2%;
+}
+.img-carrito{
+width: 40%;
+}
+
+.sub-carrito p {
+	font-size: 1.3rem;
+	margin-left: 6%;
+	width: 100%;
+	color: gray;
+}
+
+ul.carro img {
+	width: 33%;
+	height: 10%;
+}
+
+ul.carro{
+	display: none;
+}
+
+.info-carro {
+	color: orange;
+	width: 100%;
+	font-size: 1.2rem;
+	margin-left: 2%;
+}
+
+.sub-precio {
+	display: flex;
+	margin-top: 25%;
+	font-size: small;
+	width: 100%;
+	text-align: center;
+}
+
+input.number {
+	padding: 0% 5%;
+	margin: 0px;
+	margin-top: 3%;
+}
+/*.cant-product{
+			width: 20%;
+			height: 1.8rem;
+			text-align: center;
+			margin-top: 10%;
+			margin-right: 16%;
+		
+}*/
+.cant-product {
+    width: 20%;
+    height: 2rem;
+    text-align: center;
+    margin-right: 30%;
+}
+.carrito-precio {
+	font-size: small;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	margin-left: 2%;
+}
+
+.menos-mas {
+	color: black;
+	display: flex;
+	max-width: 33%;
+	margin: -6%;
+}
+
+.fa-minus {
+	color: white;
+	margin-left: 37%;
+}
+
+.sub-carrito-precio {
+	color: gray;
+	font-size: small;
+	font-size: 18px;
+}
+
+.Subtotal {
+	font-size: 1.5rem;
+	color: grey;
+	width: 50%;
+}
+
+.finalizar {
+	margin-top: 20%;
+	cursor: pointer;
+	display: inline-block;
+}
+
+li {
+	display: flex;
+}
+
+.fa-trash-alt {
+	color: orange;
+	background-color: #faedca;
+	padding: 1%;
+	display: flex;
+	margin-top: 1%;
+	margin-right: 3%;
+}
+
+a {
+	display: flex;
+	justify-content: center;
+}
+
+/*-----------------PRODUCT-CREATE-FORM--------------------------------------------------*/
+
+h1.products-title {
+
+	color: white;
+	background-color: orange;
+	font-size: 2.20rem;
+	padding: 1%;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+	margin-bottom: revert;
+
+}
+
+textarea#description.form-input {
+	margin-top: 5%;
+	width: 50%;
+	height: 13rem;
+	padding: 1%;
+	text-align: -webkit-match-parent;
+	display: inline-table;
+}
+
+.buy-now-button {
+	display: flex;
+	justify-content: center;
+	font-size: 190%;
+}
+
+
+div.ajustarImagen{
+max-width: 25%;
+margin-left: 25px;
+}
+.img-product-edit{
+	border-radius: 50%;
+    margin-top: 10%;
+	border: double 2px orange;
+	background-color: lightgray;
+}
+
+
+
+
+
+/* PERFIL DE USUARIO */
+
+.profile-container {
+	display: flex;
+    margin-top: 20%;
+    JUSTIFY-CONTENT: CENTER;
+}
+
+.profile-container .image-container {
+	display: flex;
+	justify-content: left;
+	width: 30%;
+	margin-right: 5%;
+}
+
+.profile-image {
+	width: 100%;
+	border: orange solid 2px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.data-container {
+	font-size: 2rem;
+}
+
+.data-container .data-titles {
+	color: orange;
+	font-size: 2rem;
+}
+
+.data-container .user-data {
+	color: black;
+	font-size: 1.2rem;
+}
+
+
+
+/*!Media Querys*/
+
+@media (min-width: 480px) {
+	article:hover {
+		transform: scale(1.3);
+	}
+	
+	.button button{
+		font-size: 1.7rem;
+	}
+	footer {
+		display: flex;
+		justify-content: space-around;
+		line-height: 240%;
+	}
+
+	.redes-sociales {
+		display: flex;
+	}
+	
+	.fa-trash-alt {
+	margin-top: 1%;
+	}
+	
+}
+
+@media (min-width: 768px) {
+	
+
+	
+	.carrot {
+			font-size: 1.6rem;
+			justify-content: center;
+			margin: 0%;
+		}
+
+	.menu-principal {
+		margin-bottom: -3%;
+	}
+
+	.carrusel1 img {
+		display: none;
+	}
+
+
+
+	.carrusel2 img {
+		display: block;
+		max-width: 100vw;
+		width: 100%;
+		height: 39rem;
+	}
+
+	.circulos {
+		padding-bottom: 5%;
+	}
+
+	article {
+		width: 30%;
+		margin: 1%;
+	}
+
+	/*product*/
+	.boton-agregar {
+		margin: 15% 13%;
+	}
+
+	.product-details {
+		display: flex;
+	}
+	
+
+	.info-product-details {
+		margin-top: 7%;
+		margin-left: 2%;
+	}
+
+	.product-details img {
+		max-width: 30%;
+	}
+
+	p.descripcion {
+		display: block;
+		font-size: 110%;
+		justify-items: auto;
+			
+		}
+		
+
+	/*carrito*/
+
+	
+.img-carrito{
+		width: 50%;
+		margin-left: 18%;
+	}
+	ul.carro{
+		display: block;
+	}
+	.sub-carrito {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 1%;
+		color: grey;
+		
+	}
+.sub-carrito p{
+	font-size: 1.8rem;
+}
+
+
+	p.sub-carrito {
+		color: grey;
+	justify-content: space-between;
+	}
+
+
+	.info-carro {
+		color: orange;
+    width: 20%;
+    margin-top: 0%;
+    font-size: 1.2rem;
+	margin-left: 30%;
+	}
+}
+
+@media (min-width: 1024px) {
+	
+	article {
+		width: 20%;
+		margin: 1%;
+	}
+}

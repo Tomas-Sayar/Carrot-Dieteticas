@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include("./partials/head") %>
+
+    <body>
+        <!-- HEADER -->
+        <%- include("./partials/header") %>
+
+            <main>
+                <form class="carrito-form" action="" method="post">
+                    <section class="carro">
+                        <h2 class="carrito">Mi Carrito</h2>
+
+                        <ul class="carro">
+
+                            <div class="sub-carrito">
+                                <p>Producto</p>
+                                <p>Precio</p>
+                                <p>Cantidad</p>
+                                <p>Subtotal</p>
+                            </div>
+                            </ul>
+
+
+                            <ul class="sub-carrito">      
+                                <div>   
+                                <img src="img/products/frutos-secos-image.jpg" alt="frutosSecos" class="img-carrito">
+                                <h4 class="info-carro">Frutos secos: almendras</h4>
+                                </div>
+                                <p class="carrito-precio">1x$1000</p>
+                                <input type="number" class="cant-product" name="cant-product" id="cant-product" placeholder=0 >
+                                <button i class="far fa-trash-alt"></button>
+                                </div>
+
+                        </ul>
+                        <div class="sub-precio">
+                            <p class="Subtotal">Total</p>
+                            <p class="sub-carrito-precio">$1000</p>
+                        </div>
+                </form>
+            </main>
+            <a href="/">
+                <button class="finalizar">FINALIZAR COMPRA</button>
+            </a>
+            </section>
+
+            <!-- FOOTER -->
+            <%- include("./partials/footer") %>
+
+    </body>
+
+</html>

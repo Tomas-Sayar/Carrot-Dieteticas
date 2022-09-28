@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include("./partials/head") %>
+
+	<body>
+		<!-- HEADER -->
+		<%- include("./partials/header") %>
+
+			<main>
+				<div class="carrusel1">
+					<img src="img/carrusel-image1.jpg">
+				</div>
+
+				<div class="carrusel2">
+					<img src="img/carrusel-image2.jpg">
+				</div>
+
+				<div class="circulos">
+					<div class="circulo"></div>
+					<div class="circulo-relleno"></div>
+					<div class="circulo"></div>
+					<div class="circulo"></div>
+					<div class="circulo"></div>
+				</div>
+
+				<section class="destacado">
+					<h1 class="titulo">Destacados</h1>
+
+					<section class="products">
+						<% featuredProducts.forEach(product=> { %>
+							<article>
+								<a href="/products/<%=product.id%>">
+									<img src="/img/products/<%= product.image%>" alt="frutos-secos">
+								</a>
+								<div class="info">
+									<h1>
+										<%= product.name %>
+									</h1>
+									<p class="descripcion">
+										<%= product.description %>
+									</p>
+									<p class="precio">
+										$<%= product.price %>
+									</p>
+								</div>
+							</article>
+							<% }); %>
+					</section>
+					<a href="/products">
+						<button class="ver-mas-productos">Ver más productos</button>
+					</a>
+				</section>
+			</main>
+
+			<!-- FOOTER -->
+			<%- include("./partials/footer") %>
+<script type="text/javascript" src= "/js/js-front.js"></script>
+	</body>
+
+</html>

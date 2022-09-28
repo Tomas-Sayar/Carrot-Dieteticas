@@ -1,0 +1,45 @@
+
+########################################################################
+
+- Tipo de dato para guardar imagenes en mySql y sequelize
+
+RTA: lo guardamos en un string/varchar 
+( conviene guardar toda la ruta de la imagen antes q solo el nombre )
+
+########################################################################
+
+ en textarea para que nos traiga la descripcion para poder editarla
+ en producst create edit
+- En el metodo store de productController, una vez creado el producto,
+como hacer para q nos rediriga al detalle de ese mismo producto
+
+RTA: 
+
+
+#########################################################################
+para guardar todos los datos que tenemos en la carpeta data a la carpeta database?
+
+
+- como hacer para que en el formulario de edicion de producto nos cargue la imagen 
+del mismo
+
+- lo mismo con los select
+
+
+#########################################################################
+- donde van la info de cuando creas una cuenta de usuario, y no lo puedo loguear
+
+-processLogin como cambiarlo a mySql
+- cuando creas una cuenta de usuario la parte de type of user en id no se nos pone el id que correspode al tipo de usuario
+
+- register form  hay que validar la extension de la imagen en el front desde js-front?? o solo desde la vista del formulario
+
+#################################
+- edicion de producto nos da error
+
+###########################################
+En products y en products details la descripcion se sale del cuadrado porque??
+-Porque habiamos puesto en la descripcion con palabras muy largas
+ #######################################################################
+ api/usuarios no entra
+ adress? esta mal escrito en el algun lado figura error en mySql

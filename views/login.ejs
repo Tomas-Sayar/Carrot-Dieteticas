@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include("./partials/head") %>
+    <body>
+        <!-- HEADER -->
+        <%- include("./partials/header") %>
+        <br>
+        <br>
+ <main>
+<!--<video src="/img/videoLogin.mp4" autoplay muted loop class="backgroundLogin"</video>-->
+
+    <h1 class="login">Login de usuario</h1>     
+           
+    <form action="/users/login" method="post" class="loginForm">
+                    <div>
+                        <label for="usuario">Email:</label>
+                        <br>
+                        <input type="text" name="email" id="usuario">
+                        <span class="feedback"></span>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="contraseña">Contraseña:</label>
+                        <br>
+                        <input type="password" name="password" id="contraseña" autocomplete="off">
+                        <span class="feedback"></span>
+                        <span class="resetearContraseña">
+                            <a href="/account/reset">¿Olvidaste tu contraseña?</a>
+                        </span>
+                    </div>
+                    <br>
+                    <div class="button">
+                        <button type="submit" required>INICIAR SESIÓN</button>
+                        <span class="feedback"></span>
+                    </div>
+                        <p class= "sinUsuario">¿Aún no tenés un usuario?
+                        <a href= "/users/register" class="aSinUsuario">Registrate.</a>
+                    </p>
+                    <div class="errores"><ul></ul></div>
+                    
+                </form>
+            </main>
+
+	<!-- FOOTER -->
+    <%- include("./partials/footer") %>
+    <script type="text/javascript" src= "/js/js-front-login.js"></script>
+
+</body>
+
+</html>

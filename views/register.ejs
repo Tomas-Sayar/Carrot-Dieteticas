@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include("./partials/head") %>
+
+	<body>
+		<!-- HEADER -->
+		<%- include("./partials/header") %>
+
+			<main>
+				<form action="/users/register" method="post" class="register" enctype="multipart/form-data">
+					<div class="titulo-contenedor">
+						<h1 class="Crear-Cuenta">Crear cuenta</h1>
+					</div>
+
+					<div>
+						<label for="nombreApellido">Nombre y Apellido:</label>
+						<input class="form-control" type="text" name="nombreApellido" id="nombreApellido"
+							placeholder="Fernanda Sánchez"
+							value="<%= locals.oldData ? oldData.nombreApellido : null %>">
+					</div>
+					<% if (locals.errors && errors.nombreApellido) { %>
+						<p class="error-feedback">
+							<%= errors.nombreApellido.msg %>
+						</p>
+						<% } %>
+							<br>
+							<div>
+								<label for="nombreDeUsuario">Nombre de Usuario:</label>
+								<input class="form-control" type="text" name="nombreDeUsuario" id="nombreDeUsuario"
+									placeholder="Ferchu" value="<%= locals.oldData ? oldData.nombreDeUsuario : null %>">
+							</div>
+							<br>
+							<div>
+								<label for="email">Email:</label>
+								<input class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+									type="email" name="email" id="email" placeholder="mfernanda@gmail.com"
+									value="<%= locals.oldData ? oldData.email : null %>">
+
+								<% if (locals.errors && errors.email) { %>
+									<p class="error-feedback">
+										<%= errors.email.msg %>
+									</p>
+									<% } %>
+							</div>
+
+							<div>
+								<label for="fechaDeNacimiento">Fecha de nacimiento:</label>
+								<input class="form-control" type="date" name="fechaDeNacimiento" id="fechaDeNacimiento"
+									placeholder="26/08/1988"
+									value="<%= locals.oldData ? oldData.fechaDeNacimiento : null %>">
+								<% if (locals.errors && errors.fechaDeNacimiento) { %>
+									<p class="error-feedback">
+										<%= errors.fechaDeNacimiento.msg %>
+									</p>
+									<% } %>
+							</div>
+							<br>
+							<div>
+								<label for="domicilio">Domicilio:</label>
+								<input class="form-control" type="text" name="domicilio" id="domicilio"
+									placeholder="Av.Santa Fe 999"
+									value="<%= locals.oldData ? oldData.domicilio : null %>">
+							</div>
+							<% if (locals.errors && errors.domicilio) { %>
+								<p class="error-feedback">
+									<%= errors.domicilio.msg %>
+								</p>
+								<% } %>
+									<br>
+
+									<label> Perfil del usuario:</label>
+									<br>
+									<div class="tipoUsuario">
+
+										<label for="minorista" class="minorista">Minorista
+											<input type="radio" name="tipoDeUsuario" value="3" class="minorista"
+												checked></label>
+										<label for="mayorista" class="mayorista">Mayorista
+											<input type="radio" name="tipoDeUsuario" value="2" class="mayorista">
+										</label>
+									</div>
+									<br>
+
+									<label for="usersImage">Seleccionar una imagen para el perfil:</label>
+									<input class="form-control" type="file" id="usersImage" name="usersImage">
+									<br>
+									<br>
+									<div>
+										<label for="contraseña">Contraseña:</label>
+										<input class="form-control" type="password" name="passwordDeUsuario" id="contraseña"<% if
+											(locals.errors && errors.passwordDeUsuario) { %>
+										<p class="error-feedback">
+											<%= errors.passwordDeUsuario.msg %>
+										</p>
+										<% } %>
+									</div>
+
+									<br>
+									<div>
+										<label for="confirmContraseña">Confirmar contraseña:</label>
+										<input class="form-control" type="password" name="confirmpasswordDeUsuario" id="confirm"<%
+											if (locals.errors && errors.passwordconfirmacionDeUsuario) { %>
+										<p class="error-feedback">
+											<%= errors.passwordconfirmacionDeUsuario.msg %>
+										</p>
+										<% } %>
+									</div>
+									<br>
+									<div class="botones">
+										<a href="/login">
+											<button type="submit">Crear cuenta</button>
+										</a>
+									</div>
+									<div class="errores"><ul></ul></div>
+
+				</form>
+			</main>
+			<br>
+			<br>
+
+			<!-- FOOTER -->
+			<%- include("./partials/footer") %>
+			<script type="text/javascript" src= "/js/js-front-register.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head") %>
+
+    <body>
+        <%- include("./partials/header") %>
+
+            <main>
+
+                <section class="profile-container">
+
+                    <div class="image-container">
+                        <img class="profile-image" src="/img/users/<%= user.image %>">
+                    </div>
+                    <div class="data-container">
+                        <p class="data-titles">Nombre y apellido:</p>
+                        <p class="user-data">
+                            <%= user.name %>
+                        </p>
+                        <p class="data-titles">Nombre de usuario:</p>
+                        <p class="user-data">
+                            <%= user.username %>
+                        </p>
+                        <p class="data-titles">Fecha de nacimiento:</p>
+                        <p class="user-data">
+                            <%= user.dateOfBirth %>
+                        </p>
+                        <p class="data-titles">Domicilio:</p>
+                        <p class="user-data">
+                            <%= user.adress %>
+                        </p>
+                        <p class="data-titles">Tipo de usuario:</p>
+
+                        <% if ( user.typeOfUser_id==1 ) { %>
+                            <p class="user-data">
+                                Administador
+                            </p>
+                            <% } else if ( user.typeOfUser_id==2 ) { %>
+                                <p class="user-data">
+                                    Mayorista
+                                </p>
+                                <% } else {%>
+                                    <p class="user-data">
+                                        Minorista
+                                    </p>
+                                    <% } %>
+
+
+                                        <p class="data-titles">Correo electronico:</p>
+                                        <p class="user-data">
+                                            <%= user.email %>
+                                        </p>
+                    </div>
+
+                </section>
+
+            </main>
+
+            <%- include("./partials/footer") %>
+    </body>
+
+</html>

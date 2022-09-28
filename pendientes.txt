@@ -1,0 +1,7 @@
+
+boton logout
+
+en el formulario de creacion de producto {
+    agregar imagen (para q sea mas intuitivo)
+    agregar validacion en el caso de no mandar imagen
+}
